@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Showcase</title>
+<style>
+  /* Reset default margin and padding */
+  body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Container for the entire page */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Header styles */
+  .header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+  /* Navigation menu styles */
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px 0;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+    list-style: none;
+  }
+
+  /* Main content styles */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .product-card {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #eee;
+    padding: 20px;
+  }
+
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Product Showcase</h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Products</li>
+        <li class="nav-item">About</li>
+        <li class="nav-item">Contact</li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <div class="product-card">
+        <img src="product1.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1.</p>
+      </div>
+      <!-- Repeat similar product-card elements for other products -->
+
+    </main>
+
+    <aside class="sidebar">
+      <h2>Related Links</h2>
+      <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+      </ul>
+    </aside>
+
+    <footer class="footer">
+      <p>&copy; 2023 Product Showcase. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
